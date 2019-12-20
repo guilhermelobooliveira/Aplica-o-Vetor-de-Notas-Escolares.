@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mediaaluno;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Marino
+ */
+public class ClasseMediaAluno {
+        int notas[] = new int[1];
+        int media = 0;
+        
+        public void adicionarnotas(){
+        notas[0] = Integer.parseInt(JOptionPane.showInputDialog(null, " qual o sua 1 nota ? "));
+        notas[1] = Integer.parseInt(JOptionPane.showInputDialog(null, " qual o sua 2 nota ? "));
+        if(notas[0] > 100 && notas[1] > 100){
+            System.out.println(" erro ");
+        }
+        else{
+        }
+        }
+                
+        public void calcularmedia(){
+            media = media + notas[0] + notas[1];
+            System.out.println(" a media e: " + (media)/2);
+        }
+        
+        public int[] notas(){
+        return notas;
+    }
+    }
